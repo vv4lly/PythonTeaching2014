@@ -1,4 +1,4 @@
-''' Sample program to converts integers to binary and vice versa
+''' Simple program to convert integers to binary and vice versa
 
 Mark Foley October 2013
 '''
@@ -7,7 +7,6 @@ print('Int to binary')
 intStr = input('Give me an int: ')
 myInt = int(intStr)
 
-# while myInt > 0:
 binStr = ''
 while myInt > 0:
     binStr = str(myInt % 2) + binStr
