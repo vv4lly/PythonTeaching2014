@@ -1,3 +1,8 @@
+'''
+Simple guessing game. Computer selects a random integer between 1 and 20. You inout guesses. Computer gives you
+hint (too high or too low). Ends when you correctly guess the number or after 6 attempts.
+'''
+
 import random
 
 guesses_taken = 0
