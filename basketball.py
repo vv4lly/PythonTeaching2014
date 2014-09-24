@@ -1,3 +1,7 @@
+'''
+This determines the existence of a 'safe lead' in basketball using the algorithm developed by Bill James
+'''
+
 # Bill James' Safe Lead Calculator
 # From http://www.slate.com/id/2185975/
 

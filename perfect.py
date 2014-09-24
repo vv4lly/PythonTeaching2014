@@ -1,3 +1,7 @@
+'''For a range of numbers starting at 2, determine whether the number is 'perfect', 'abundant' or 'deficient',
+
+'''
+
 topNum = input("What is the upper number for the range:")
 topNum = int(topNum)
 theNum=2
