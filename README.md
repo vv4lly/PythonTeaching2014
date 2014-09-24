@@ -1,4 +1,4 @@
 PythonTeaching2014
 ==================
 
-Repository to hold code examples for DT211 OOP &amp; DT249 P&amp;A
+Repository to hold code examples for DT211 Object Oriented Programming and DT249 Programming and Algorithms
