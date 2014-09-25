@@ -5,9 +5,9 @@ using a simple algorithm.
 The algorithm we will use is the following:
 * To encrypt a string, we reverse it and add 1 to the ASCII code for each 
 character. For example, if we take the word:
-	python
-	When we encrypt the word it becomes:
-	opiuzq
+    python
+    When we encrypt the word it becomes:
+    opiuzq
 Notice that the p in python has become q in the encrypted string and we 
 have switched the order.
 
