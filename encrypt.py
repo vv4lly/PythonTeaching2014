@@ -128,7 +128,7 @@ while optionStr != "0":
         print("\nExiting ... Goodbye!")
 
     #
-    # Catches any other wierd condition. Should never be reached, it's
+    # Catches any other weird condition. Should never be reached, it's
     # just here for completeness.
     #
     else:
