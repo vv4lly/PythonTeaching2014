@@ -23,29 +23,25 @@ G2Bd efge|dBAB dBAB|G2Bd efge|dBAG EGGD|
 G2Bd efge|dB~B2 dega|(3bag ag egde|gedB AGED||
 '''
 tuneCount = 0
-myFile = open("hnr1.abc","r")
+myFile = open("hnr1.abc", "r")
 for line in myFile:
-	if line[:2] == "X:":
-		tuneCount += 1
-		hasTitle = False
-		print() 			# Blank line at the start of each tune
-		print(line[2:-1],"...", end=' ')
-	elif line[:2] == "T:":
-		if not hasTitle:	# We only want the first of a possible list of titles
-			print(line[2:-1],"...", end=' ')
-			#title1, title2 = line[2:].split(",")
-			#if title2:
-			#	print title2, 
-			#print title1,
-			hasTitle = True
-	elif line[:2] == "M:":
-		print("Time sig:",line[2:-1],"...", end=' ')
-	elif line[:2] == "K:":
-		print("Key sig:",line[2:-1],"...", end=' ')
-	
+    if line[:2] == "X:":
+        tuneCount += 1
+        hasTitle = False
+        print()  # Blank line at the start of each tune
+        print(line[2:-1], "...", end=' ')
+    elif line[:2] == "T:":
+        if not hasTitle:  # We only want the first of a possible list of titles
+            print(line[2:-1], "...", end=' ')
+            hasTitle = True
+    elif line[:2] == "M:":
+        print("Time sig:", line[2:-1], "...", end=' ')
+    elif line[:2] == "K:":
+        print("Key sig:", line[2:-1], "...", end=' ')
+
 myFile.close()
 
-print()	
+print()
 print("-------------------------------")
-print("There are",tuneCount,"tunes in the file")
+print("There are", tuneCount, "tunes in the file")
 print("-------------------------------")

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6f7a613-bc8b-443e-9234-93d3c56e4b34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/abcFileReader.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hnr1.abc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utfTable.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/abcFileReader.py" afterPath="$PROJECT_DIR$/abcFileReader.py" />
     </list>
     <ignored path="PythonTeaching201415.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,6 +14,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/PythonTeaching201415$abcFileReader.coverage" NAME="abcFileReader Coverage Results" MODIFIED="1412201624883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonTeaching201415$newtonsqrt3.coverage" NAME="newtonsqrt3 Coverage Results" MODIFIED="1411563159290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonTeaching201415$hailstone.coverage" NAME="hailstone Coverage Results" MODIFIED="1411992895781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonTeaching201415$encrypt.coverage" NAME="encrypt Coverage Results" MODIFIED="1411565313376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -58,18 +57,18 @@
       <file leaf-file-name="hailstone.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hailstone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-165.0" vertical-offset="0" max-vertical-offset="525">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="10" />
+            <state vertical-scroll-proportion="-120.0" vertical-offset="0" max-vertical-offset="525">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hnr1.abc" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hnr1.abc">
+      <file leaf-file-name="abcFileReader.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/abcFileReader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="23130">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.80088496" vertical-offset="343" max-vertical-offset="795">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,6 +108,7 @@
         <option value="$PROJECT_DIR$/perfect2.py" />
         <option value="$PROJECT_DIR$/int2base.py" />
         <option value="$PROJECT_DIR$/utfTable.py" />
+        <option value="$PROJECT_DIR$/abcFileReader.py" />
       </list>
     </option>
   </component>
@@ -208,7 +208,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.hailstone">
+  <component name="RunManager" selected="Python.abcFileReader">
     <configuration default="false" name="hailstone" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -223,27 +223,6 @@
       <module name="PythonTeaching201415" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hailstone.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="perfect2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonTeaching201415" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/perfect2.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -307,6 +286,27 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utfTable.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="abcFileReader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonTeaching201415" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/abcFileReader.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -462,18 +462,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.hailstone" />
-      <item index="1" class="java.lang.String" itemvalue="Python.perfect2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.perfect" />
-      <item index="3" class="java.lang.String" itemvalue="Python.int2base" />
-      <item index="4" class="java.lang.String" itemvalue="Python.utfTable" />
+      <item index="1" class="java.lang.String" itemvalue="Python.perfect" />
+      <item index="2" class="java.lang.String" itemvalue="Python.int2base" />
+      <item index="3" class="java.lang.String" itemvalue="Python.utfTable" />
+      <item index="4" class="java.lang.String" itemvalue="Python.abcFileReader" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.hailstone" />
-        <item index="1" class="java.lang.String" itemvalue="Python.utfTable" />
-        <item index="2" class="java.lang.String" itemvalue="Python.int2base" />
-        <item index="3" class="java.lang.String" itemvalue="Python.perfect" />
-        <item index="4" class="java.lang.String" itemvalue="Python.perfect2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.abcFileReader" />
+        <item index="1" class="java.lang.String" itemvalue="Python.hailstone" />
+        <item index="2" class="java.lang.String" itemvalue="Python.utfTable" />
+        <item index="3" class="java.lang.String" itemvalue="Python.int2base" />
+        <item index="4" class="java.lang.String" itemvalue="Python.perfect" />
       </list>
     </recent_temporary>
   </component>
@@ -592,10 +592,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21221864" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21221864" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -604,7 +604,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50321543" sideWeight="0.4996041" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16785431" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39871383" sideWeight="0.5003959" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2266881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2266881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -680,8 +680,13 @@
           <url>file://$PROJECT_DIR$/int2bin.py</url>
           <line>5</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/abcFileReader.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -760,24 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7077922" vertical-offset="337" max-vertical-offset="645">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/perfect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-120.0" vertical-offset="0" max-vertical-offset="435">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.4/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4558" max-vertical-offset="16740">
-          <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -796,18 +787,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hailstone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-165.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hnr1.abc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="23130">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hailstone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-120.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.4/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4572" max-vertical-offset="16740">
+          <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1128318" vertical-offset="52" max-vertical-offset="645">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abcFileReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80088496" vertical-offset="343" max-vertical-offset="795">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
