@@ -1,4 +1,5 @@
-
+# Sample program to read line by line from a text file
+# and split each line into chunks
 
 fh = open("test1.txt", "r")
 

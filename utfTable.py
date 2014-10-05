@@ -1,3 +1,6 @@
+# Prints decimal, character, octal and hexadecimal representation of a range of numbers
+# Illustrates the representation of characters in utf-8
+
 top_num = int(input("Enter max decimal : "))
 print("| ", end="")
 for dec_num in range(top_num):
