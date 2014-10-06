@@ -60,4 +60,4 @@ print("Total hands in file: {}".format(total_count))
 print("Count and probability of hands:")
 
 for i in range(10):
-    print("  {:18s}:{:10,d}{:10.4f}%".format(rank_list[i], rank_counts[i], rank_counts[i] / total_count * 100))
+    print("  {:18s}:{:10,d}{:10.4%}".format(rank_list[i], rank_counts[i], rank_counts[i] / total_count))
