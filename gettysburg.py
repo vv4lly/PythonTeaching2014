@@ -22,29 +22,29 @@ and string.punctuation, a string containing all of the punctuation characters.
 
 # Import:
 # string (gives us whitespace and punctuation lists)
-# urllib.request (so that we can read from the net)
-# URLError (in case we have net-related problems
-import string
-import urllib.request
-from urllib.error import URLError
+# httplib2 is a 'better' http handler than urllib because it plays nice in regard to caching, checking mod dates etc.
+import string, httplib2
 
 # Variables to hold file URLs
 SPEECH_URL = "http://mf2.dit.ie/gettysburg.txt"
 STOPWORDS_URL = "http://mf2.dit.ie/stopwords.txt"
 
+
 def makeWordList(gFile, stopWords):
     """Create a list of words from the file while excluding stop words."""
-    speech = []                                     # list of speech words: initialized to be empty
+    speech = []  # list of speech words: initialized to be empty
 
     for lineString in gFile:
-        lineList = lineString.strip(string.whitespace).split()               # split each line into a list of words and strip whitespace
+        lineList = lineString.strip(
+            string.whitespace).split()  # split each line into a list of words and strip whitespace
         for word in lineList:
-            word = word.lower()                     # make words lower case (we consider a word in lowercase and uppercase to be equivalent)
-            word = word.strip(string.punctuation)   # strip off punctuation
+            word = word.lower()  # make words lower case (we consider a word in lowercase and uppercase to be equivalent)
+            word = word.strip(string.punctuation)  # strip off punctuation
             if (word not in stopWords) and (word not in string.punctuation):
                 # if the word is not in the stop word list, add the word to the speech list
                 speech.append(word)
     return speech
+
 
 def countWords(speech):
     """Create a dictionary and count the occurrences of each word.
@@ -59,27 +59,31 @@ def countWords(speech):
 
     return counts
 
+
 def main():
     '''Process the speech once you can successfully open both the speech and the stop words files from the net.'''
     try:
-        #Open the speech and stop words files from the net
-        local_filename, headers = urllib.request.urlretrieve(SPEECH_URL)
-        gFile = open(local_filename, "r")
-        local_filename, headers = urllib.request.urlretrieve(STOPWORDS_URL)
-        stopFile = open(local_filename, "r")
+        # The request method gives us http header information and the content as a bytes object.
+        h = httplib2.Http(".cache")
+        speech_headers, speech = h.request(SPEECH_URL)
+        stopwords_headers, stopwords = h.request(STOPWORDS_URL)
 
-        #Make a tuple of all the stop words while losing the newline char
-        stopWords = tuple(stopFile.read().strip().split(','))
-        # Close the stop words file as we don't need it any more
-        stopFile.close()
+        # We don't know what we're getting. The content-type header might give us a clue. In this example
+        # I'm just going to assume that we can correctly decode utf-8 (the default). I can do this because I know that
+        # the file is just a short 'plain text' speech so I know that there won't be any oddities in there. This
+        # is often a bit of a gamble for, as we know, there is no such thing as 'plain text'.
+
+        # Make a list of lines by splitting on the newline character.
+        speech = speech.decode().split("\n")
+
+        # Make a tuple of all the stop words while losing the newline character
+        stopwords = tuple(stopwords.decode().strip().split(','))
 
         # Make word list from speech while excluding stop words
-        speech = makeWordList(gFile, stopWords)
+        speech = makeWordList(speech, stopwords)
+
         # Make a set of words from speech which automatically assures that each entry is unique
         unique = set(word for word in speech)
-
-        # Close the speech file as we don't need this any more
-        gFile.close()
 
         # Print the results
         print("Speech Length: {}".format(len(speech)))
@@ -92,10 +96,12 @@ def main():
             print("{}: {}".format(word, words[word]), end=" ")
         print("\n")
 
-    except IOError as e:
-        print("I/O Error: {}".format(e))
-    except URLError as u:
-        print("URL Error: {}".format(u))
+        print("Request for {} returned status of {}.".format(SPEECH_URL, speech_headers['status']))
+        print("Request for {} returned status of {}.".format(STOPWORDS_URL, stopwords_headers['status']))
+
+    except httplib2.HttpLib2Error as e:
+        print(e)
+
 
 # Run if stand-alone
 if __name__ == '__main__':
