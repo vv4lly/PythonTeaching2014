@@ -1,6 +1,7 @@
 # count poker hands
 
-pokerFile = open("poker-hand-testing.data", 'r')  # 1. open file for reading
+pokerFile = open("poker-hand-testing.data", 'r')
+# 1. open file for reading
 
 # 2. create and initialize variables to hold the counts
 totalCount = 0

@@ -57,7 +57,8 @@ def reduce(frac):
     return (frac[0] / my_gcd, frac[1] / my_gcd)
 
 
-if __name__ == "__main__":
+
+def main():
     a = add_frac((3, 4), (5, 8))
     b = sub_frac((3, 4), (2, 3))
 
@@ -66,3 +67,6 @@ if __name__ == "__main__":
     z = reduce((25, 50))
 
     print("\na={}\nb={}\nx={}\ny={}\nz={}".format(a, b, x, y, z))
+
+if __name__ == "__main__":
+    main()
